@@ -1,0 +1,390 @@
+
+
+
+# Heading 1
+# Heading 2
+## Heading 2.1
+## Heading 2.2
+
+
+* This is italic text
+** Bold text
+
+'-' symbol with space,  for bold black bullet
+*' symbol with space, which gives the black square symbol.
+Ordered list by '1. ' i.e., the required number followed by space
+
+horizontal line by using Markdown '---' three hyphens
+The line break tag starts with <br> tag
+
+Table format
+|Name|Address|Salary| |-----|-------|------| |Hanna|Brisbane|4000| |Adam|Sydney|5000|
+
+
+Internal Link
+<a id = "division_ID"text goes here></a>
+
+External Link
+<a> href="https://www.google.com" >Link to Google</a>
+Link to Google
+
+========================================
+Questions
+Discuss Compiler Vs Interpreter Advantages  Shell ?
+
+Interactive mode ? script mode?
+
+User input function?
+
+Functions Pass by value vs pass by reference
+
+Lamba Expressions
+
+Magic/Dunder methods
+
+Git ?
+
+
+======================================
+Intro
+============
+
+Types of Programming Languages:
+	• High level: C , C++ , Java, python
+	User Interface: HTML , angular JS , node Js ,Java Script , CSS, J query , PHP, bootstrap 
+	Joint: API , soap
+	Backend: Java, .NET , ASP.net , C sharp
+	Tools/IDE : visual studio, Eclipse 
+	 
+	• Low level: Binary & assembly programming languages 
+
+Converting High level source code into Machine code by : 
+		? Compiler
+			§ Execute Entire code  
+		? Interpreter
+			§ Excute one statement at a time. Eg: Phython
+
+
+
+Overview:
+	• Python is high level language
+	• Python is interpreted 
+	• Python is interactive
+	• Python is object oriented programing language.
+Features:
+	• Easy to learn, read 
+	• Interactive mode
+	• Portable:  run program on any kind of operating system.
+	• Extendable: Upgradable
+	• Database Interfaces
+	• GUI Programming
+	• Scalable
+	• Supports automatic garbage collection
+	• Can be intergraded with c, c++,java
+	
+
+==================
+Python Environment
+=================
+
+For Comments #
+For Quotation ' " """
+
+
+
+Download and Install Python:
+	• www.Python.org/downloads
+	• Python 3.4.3
+	• Python IDLE / shell
+
+Python Develop Environments:
+
+Text Editors:
+	• Lime text
+	• Atom
+FULL IDEs:
+	• Pycharm.
+	• Spyder
+Notebook Environment:
+	• Jupyter notebook
+
+
+
+
+	
+Ways to execute code:
+	• In Interactive Mode : IDLE shell ( Interactive Development Learning Environment)
+	• In Scripting Mode( notepad) 
+		? Run script From Command line: python test.py
+		? List out python command line options: python -h
+	• Self executable python script(.exe file):
+		? Linux: 
+			§ #!/usr/bin/python  # beginning of the script #
+			§ $chmod+x test.py  # + as Read x as Execute #  converting file into self executable script(.exe file). 
+		? Windows:
+			§ Install py2exe module using pip utility.
+			§ From command line 
+			§ >install py2exe
+			§ Script begin with:
+				? From distutils.core import setup
+				? Import py2exe
+				? Setup(console=['test.py])
+
+=================================
+Keywords , Identifiers, Variables
+====================================
+Keywords/Reserved Words:
+	• These are reserved words and you cannot use them as constant or variable or any other identifier names. All the Python keywords contain lowercase letters only.
+	• 32 keywords
+	And   exec Not
+	Assert  finally or
+	Break   for pass
+	Class  from print
+	Continue global raise
+	def if return
+	del import try
+	elif in while
+	else is with
+	except lambda yield
+
+
+Identifiers:
+	• A Python identifier is a name used to identify a variable, function, class, module or other object.
+	• An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9).
+	• Python does not allow punctuation characters such as @, $, and % within identifiers. 
+	• Python is a case sensitive programming language.
+	• Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
+	• Starting an identifier with a single leading underscore indicates that the identifier is private.
+	• Starting an identifier with two leading underscores indicates a strongly private identifier.
+	• If the identifier also ends with two trailing underscores, the identifier is a language-defined special name
+	
+
+
+
+Variable: 
+	• Variables are nothing but reserved memory locations to store values.
+	• Python variables do not need explicit declaration to reserve memory space. 
+	• The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables. So that Python called Dynamically typed language. 
+	• A variable can store any datatype in a reserved memory space.
+	• To create a variable use "=" ; For example X = 10   Y = 10.5   Z = "name"     A = True/False   a,b,c = 1,2,"john" ( Multiple Assignment)
+	•  Don’t use identifiers as variables. Egg Print etc…
+	• No spaces
+
+				
+			§ >python setup.py py2xe
+				
+Lines and Indentation(Blocks):
+
+Multiline statements:  
+	• Line continuation character (\)
+	•  Not applicable for statements contains [] {} ()  Egg: Lists, Dictionaries , tuples 
+
+Quotations:
+	• Use ' ,"   , '" begin and end of quotes
+	
+Comments: 
+	• start with # 
+	• No multiline comment.
+	• #!/usr/bin/python
+	
+User Input: 
+	• Take the data from user and put it into the variable 
+	• x = input ( "enter your name")
+
+Command Line Argument:
+	• How to pass command line arguments($ python -h) into python script
+	• 
+
+=====================================================================
+						Data Types : 
+====================================================================
+Python has five standard data types -
+
+Numbers : Python supports four different numerical types -
+	• Integers:  
+	• Long Integers
+	• Float
+	• Complex Numbers
+
+String: 
+	• Strings in Python are identified as a contiguous set of characters represented in the quotation marks.
+	• Python allows for either pairs of single or double quotes
+	• Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end.
+	• The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator.
+	
+						Data Structures : 
+
+Lists:
+	• Lists are the most versatile of Python's compound data types. 
+	• A list contains items separated by commas and enclosed within square brackets []. 
+	• To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.
+	• The values stored in a list can be accessed using the slice operator : and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1.
+	• The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator.
+	• A list contains items separated by commas and enclosed within square brackets ([])
+	• For Example:
+		X = [ 1, 10.5,"name",True]          // Indexing : 0,1,2,3 or  -4,-3,-2,-1//
+		Print ( x)
+		Print ( x[0:3])
+		Print ( x[:2])
+		Print ( x[2:])
+		Print ( x[-1])
+		
+		Add object :
+			X.append("new object")
+		Change object
+			X[1] = 20.5
+		Delete object:
+			Del(x[1]) 
+		Count objects:
+			Len(x) , min(x), max(x)
+		
+Tuples:
+	• A tuple is another sequence data type that is similar to the list. 
+	• A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.
+	• The main differences between lists and tuples are: Lists are enclosed in square brackets [] and their elements, sizes can be changed, while tuples are enclosed in parentheses ( ) and their elements, sizes cannot be updated. 
+	• Tuples can be thought of as read-only lists.
+	• You can't add , edit, delete existing objects inside tuple.
+	• For Example:
+		X = ("AVR", 24, "YMF")
+		
+Dictionaries:
+	• Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. 
+	• A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
+	• Dictionaries are enclosed by curly braces { } and values can be assigned, accessed using square braces [].
+	• Dictionaries have no concept of order among elements. It is incorrect to say that the elements are "out of order"; they are simply unordered.
+	• List of all data types/objects :  key=value
+	• Purpose: store value in key, pull value via key ,assigning value to a key.
+	• There is no indexing like lists. Only mapping values to the keys.
+	• For Example: 
+		X = {"AVR":28, "YMF":35, "Ming":35}
+		X[AVR]
+		X = {'k1':[10,20.5,'venkat']} , X[k1][1] = ???   20.5
+		
+Sets:
+
+		
+Boolean Value : 
+		? Tre/false , 1/0
+		? Syntax: bool
+
+
+==========================================
+Python language supports the following types of operators.
+· Arithmetic Operators:  + -  * / %
+· Comparison (Relational) Operators:
+· Assignment Operators
+· Logical Operators
+· Bitwise Operators
+· Membership Operators
+· Identity Operators
+
+
+===================================================
+Looping
+
+Iteration:
+
+Syntax:
+While loop:
+while(condtion) {
+//statements to excute.
+}
+For loop:
+for(intialization; condition; Increment or decrement){
+// statements to be excuted.
+}
+
+
+For Loop: 
+	• Execute sequence of statements 
+		Syntax:
+		For temporaryhodingvariable in some list
+			Execute 
+
+While Loop: 
+	• Every time will check condition and then execute code.
+		Syntax:
+		While condition:
+			Execute 
+		Else:
+			Execute 
+
+Nested For Loops:
+		for a in range(0,5):
+			for b in range(0,5):
+			Print(b)
+	
+
+Loop Control statements:
+
+Break:
+		i=1
+		While i<100
+			If I ==5:
+			break
+		Print(i)
+		i=i+1 / counter++
+	
+Continue: 
+	• To bypass code underneath "continue" indentation.
+		For I in range(0,5):
+			If i<2:
+				Continue
+			Print(i)
+Pass:
+		i=1
+		While i<100
+			If I ==5:
+			Break
+			Else:
+			pass
+		Print(i)
+		i=i+1 / counter++
+
+Try and except:
+
+
+=============================================
+File Operations
+
+
+Open a File: 
+file_object  = open(“filename”, “mode”) where file_object is the variable to add the file object. 
+
+R = Read
+W = Write /create new file if file is not exist.
+A = append new lines
+R+ = Read & Write
+W+ = Read,Write,Overwrite 
+
+
+==========================================
+
+Toddd
+
+
+Sequences:
+
+Strings:
+	• 
+
+Lists/Arrays
+	• mutable
+
+Tuple
+	•  Immutable
+
+Control Structures:
+
+Conditions:
+If
+else
+elif
+
+Iterative control structures:
+While 
+And then
+
+For
+And then
+
